@@ -1,1 +1,0 @@
-# TheAmericanPatriotsCommittee.github.io
