@@ -1,3 +1,4 @@
+/* Copyright TheLostMoon */
 /* Reset default browser styles */
 body,
 h1,
@@ -54,11 +55,15 @@ body {
 #navbar {
     background-color: #48487f;
     color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 #navbar ul {
     list-style: none;
     padding: 10px;
+    position: relative;
 }
 
 #navbar ul li {
@@ -69,6 +74,30 @@ body {
 #navbar ul li a {
     color: #ffffff;
     text-decoration: none;
+}
+
+#navbar .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #48487f;
+    padding: 10px;
+    z-index: 100;
+}
+
+#navbar .menu li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#navbar .menu li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#navbar:hover .menu {
+    display: block;
 }
 
 #updates,
